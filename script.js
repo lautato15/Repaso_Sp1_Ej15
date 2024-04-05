@@ -1,6 +1,6 @@
 function sumMultiples(num) {
   let output = 0;
-  if (typeof num !== "number") return "Error de Parametros";
+  if (typeof num !== "number" || num <= 0) return "Error de Parametros";
   for (let i = 0; i < num; i++) {
     if (i % 3 === 0 || i % 5 === 0) output += i;
   }
